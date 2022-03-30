@@ -1,0 +1,1 @@
+kotlin-android-extensions 을 활용한 뷰 참조 연습

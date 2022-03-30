@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Basic_Button</string>
+    <string name="btn1_text">버튼1</string>
+    <string name="btn2_text">버튼2</string>
+</resources>
