@@ -1,5 +1,6 @@
 package com.example.basic_edittext
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -31,6 +32,13 @@ class MyTextWatcher: TextWatcher {
 
 // editName, editPassword 같이 추가한 변수들 -> 멤버 변수
 class MainActivity : AppCompatActivity() {
+
+    companion object {
+        const val REQUEST = 0
+        const val ID = "ID"
+        const val PASSWD = "PASSWD"
+        const val RESULT = "RESULT"
+    }
 
     // 태그 문자열
     val TAG = "edittext::MainActivity"
@@ -111,6 +119,32 @@ class MainActivity : AppCompatActivity() {
             override fun afterTextChanged(p0: Editable?) {
             }
         })
+
+        btnLogin.setOnClickListener {
+            val i = Intent(this, ResultActivity::class.java)
+            i.putExtra(ID, editName.text.toString())
+            i.putExtra(PASSWD, editPassword.text.toString())
+
+            startActivityForResult(i, REQUEST) // REQUEST : 요청 ID, 리턴될 때 오는 정보
+
+        }
+    }
+
+    // 호출한 액티비티에서 결과 값 받을 때
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+
+        Log.i("MainActivity", "onActivityResult $data")
+
+        if(requestCode != REQUEST) return
+        // data가 null이 아니면
+        // intent에 담겨있는 RESULT 키를 받아서
+        // let -> it으로 텍스트뷰 전달
+        // xxx.apply : 주로 xxxdml 속성을 변경할 때 -> this가 바뀌고
+        // xxx.let : xxx의 값으로 멤버 변수 수정할 때 -> this가 유지
+        data?.getStringExtra(RESULT).let{
+            txtMessage.text = it
+        }
+        super.onActivityResult(requestCode, resultCode, data)
     }
 
     // 이미지 라이브러리 Glide 사용

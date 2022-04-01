@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btnSMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SMS 보내기" />
+
+    <Button
+        android:id="@+id/btnInternet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="인터넷 이동하기" />
+
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="구글 맵" />
+
+    <Button
+        android:id="@+id/btnMarket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="구글 마켓" />
+</LinearLayout>

@@ -14,7 +14,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Log.d(TAG, "${nLineNumber++} onCreate")
+        if(savedInstanceState != null) {
+            nLineNumber = savedInstanceState.getInt("LINE_NUMBER", 0)
+        }
+
+        Log.d(TAG, "${nLineNumber++} onCreate, $savedInstanceState")
     }
 
     override fun onStart() {
