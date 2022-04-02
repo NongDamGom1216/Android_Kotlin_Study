@@ -130,10 +130,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
     // 호출한 액티비티에서 결과 값 받을 때
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
 
-        Log.i("MainActivity", "onActivityResult $data")
+        Log.i("MainActivity", "onActivityResult $data") // Logcat
 
         if(requestCode != REQUEST) return
         // data가 null이 아니면
