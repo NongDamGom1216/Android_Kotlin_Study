@@ -26,7 +26,9 @@ EditText의 데이터를 다른 액티비티로 전달
 
 리사이클 뷰를 활용한 기본적인 UI 구성 연습
 
-![Screenshot_20220403-213723](https://user-images.githubusercontent.com/70462939/161428784-3ec7b468-6765-4a83-852a-1a5e554282f6.jpg)
+![Screenshot_20220404-214307](https://user-images.githubusercontent.com/70462939/161546425-29eac009-f7aa-4cf0-a9a4-0a1ce565a6c1.jpg)
+![Screenshot_20220404-214317](https://user-images.githubusercontent.com/70462939/161546436-f241b6a4-647a-497b-8f85-35087cf45ea7.jpg)
+
 
 ## Basic_Toast_Notification
 
