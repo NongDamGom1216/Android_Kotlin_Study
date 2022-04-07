@@ -47,5 +47,7 @@ object KakaoImageSearch {
             }
             )
     }
+
+//    방법2
 //    fun getService(): KakaoImageSearchService = retrofit.create(KakaoImageSearchService::class.java)
 }
