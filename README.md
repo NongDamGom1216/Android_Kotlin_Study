@@ -42,7 +42,7 @@ EditText의 데이터를 다른 액티비티로 전달
 
 ## ImageSearch
 
-Retrofit와 카카오 이미지 검색 API를 사용한 이미지 검색 앱
+Retrofit와 카카오 이미지 검색 API를 사용한 이미지 검색 앱 <br />
 현재 날씨 정보 추가
 
 ![Screenshot_20220410-154527_ImageSearch](https://user-images.githubusercontent.com/70462939/162606614-75a75136-1c1e-4429-b4c6-31f75c623a59.jpg)
